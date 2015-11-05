@@ -124,7 +124,7 @@ SCLTimerDisplay *buttonTimer;
 - (void)dealloc
 {
     [self removeObservers];
-    [self restoreInteractivePopGesture];
+    //[self restoreInteractivePopGesture];
 }
 
 - (void)addObservers
@@ -709,7 +709,7 @@ SCLTimerDisplay *buttonTimer;
     {
         _rootViewController = vc;
         
-        [self disableInteractivePopGesture];
+        //[self disableInteractivePopGesture];
         
         self.backgroundView.frame = vc.view.bounds;
         
